@@ -309,13 +309,13 @@ li {
 .Travel .bigbox .top-card li {
 	width: 25%;
 	float: left;
-	background: ;
+	
 }
 
 .Travel .bigbox .bottom-card li {
 	width: 25%;
 	float: left;
-	background: ;
+	
 }
 
 .Travel .bigbox .top-card .jiangyou {
@@ -327,14 +327,14 @@ li {
 }
 
 .Travel .bigbox .top-card .card {
-	background: url(../项目网站制作/img/blog.jpg);
+	background: url(./img/blog1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 
 }
 
 .Travel .bigbox .bottom-card .card {
-	background: url(../项目网站制作/img/blog.jpg);
+	background: url(./img/blog2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 
