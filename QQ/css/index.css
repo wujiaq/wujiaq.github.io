@@ -1,0 +1,374 @@
+.chat .box{
+  position: fixed;
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #4382EF;
+  margin: 0 auto;
+  left: 0;
+  top: 200px;
+  right: 0;
+  padding: 15px;
+}
+.logo{
+  width: 60px;
+  margin: 0 auto;
+}
+
+.group{
+  margin-top: 20px;
+}
+
+.user-ipt{
+  display: block;
+  width: 380px;
+  height: 32px;
+  padding: 0 10px;
+  background-color: #f5f5f5;
+}
+
+.register{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 40px;
+  background-color: #5997FB;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.register-box{
+  display: none;
+}
+
+.chat-box{
+  width: 650px;
+  height: 480px;
+  background-color: #fff;
+  border: 1px solid #4382EF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+}
+
+.chat-box>.nav{
+  height: 30px;
+  background-image: linear-gradient(to right, #478EFA 0%, #26D2FF 100%);
+  padding: 5px 15px;
+  position: relative;
+}
+.nav>.title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-left{
+ width: 220px;
+}
+
+.nav-left>.search{
+  width: 170px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, .15);
+  border-radius: 8px;
+  padding: 3px 5px;
+}
+
+.search-icon{
+  width: 24px;
+  height: 24px;
+  background: url("../images/search.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.search-ipt{
+  width: 136px;
+  height: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.add{
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  margin-top: 3px;
+  background-color: rgba(0, 0, 0, .15);
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  background: url("../images/add.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.nav-right{
+  width: 400px;
+  height: 30px;
+}
+
+.close{
+  width: 24px;
+  height: 24px;
+  margin-top: 3px;
+  background: url("../images/close.png") no-repeat 0 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.chat-bottom{
+  height: 440px;
+}
+
+.chat-left{
+  width: 194px;
+  height: 440px;
+  border-right: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.friend-list>li{
+  padding: 15px;
+  position: relative;
+}
+
+.user-img{
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-text{
+  font-size: 13px;
+  color: #666;
+  margin-left: 15px;
+  width: 107px;
+}
+
+.user-name{
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.friend-list{
+  height: 440px;
+  overflow-y: auto;
+}
+
+.friend-list>li>.line{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background-color: #12B7F5;
+  display: none;
+}
+
+.friend-list>li.active{
+  background-color: #f2f2f2;
+}
+
+.friend-list>li.active>.line{
+  display: block;
+}
+.innerbox::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 2px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.innerbox::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 1px;
+  background: rgba(0,0,0,0.4);
+}
+.innerbox::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.chat-right{
+  height: 440px;
+  width: 455px;
+  display: none;
+}
+
+.chat-content{
+  height: 300px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.chating{
+  height: 119px;
+  border-top: 1px solid #f2f2f2;
+  padding: 5px;
+}
+
+.chating>.icons{
+  height: 20px;
+}
+
+.chating>.icons>li{
+  float: left;
+  width: 20px;
+  position: relative;
+}
+
+.faces{
+  position: absolute;
+  left: 0;
+  top: -65px;
+  width: 435px;
+  height: 50px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+.faces>li{
+  width: calc(435px / 20);
+  float: left;
+}
+
+.input-content{
+  margin-top: 5px;
+  display: block;
+  height: 60px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.btn{
+  width: 60px;
+  height: 26px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 4px;
+  margin-top: 6.5px;
+  cursor: pointer;
+}
+
+.close-btn{
+  border: 1px solid #ddd;
+  color: #999;
+}
+
+.send-btn{
+  margin-left: 15px;
+  background-color: #12B3EF;
+  color: #fff;
+}
+
+.login-text{
+  cursor: pointer;
+  color: #4382EF;
+}
+
+.other{
+  padding: 10px 10px 0;
+}
+
+.avatar{
+  width: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bubble{
+  max-width: 250px;
+  margin-top: 15px;
+  position: relative;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.caret{
+  position: absolute;
+  top: 5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+}
+
+.l-caret{
+  left: -10px;
+  border-right: 5px solid #f2f2f2;
+  border-left: 5px solid transparent;
+}
+
+.r-caret{
+  right: -10px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #3AA6FB;
+
+}
+
+.l-bubble{
+  margin-left: 10px;
+  background-color: #f2f2f2;
+}
+
+.r-bublle{
+  margin-right: 10px;
+  background-color: #3AA6FB;
+}
+
+.f-btn{
+  width: calc(50% - 10px);
+}
+
+.c-btn{
+  background-color: #f2f2f2;
+  color: #444;
+  margin-right: 10px;
+}
+
+.co-btn{
+  margin-left: 10px;
+}
+
+.add-friend{
+  display: none;
+}
+
+.friend-apply{
+  text-align: center;
+  display: none;;
+}
+
+.ff{
+  position: relative;
+  top: 1px;
+}
+
+.point{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e4393c;
+  display: none;
+}

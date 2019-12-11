@@ -1,0 +1,39 @@
+body{
+  margin: 0 auto;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,textarea{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clearfix{
+  overflow: hidden;
+}
+
+.auto-img{
+  width: 100%;
+  display: block;
+}
+
+.one-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

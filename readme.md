@@ -4,7 +4,7 @@
    * [Tourist](https://wujiaq.github.io/Tourist/index.html)
    
 2.js
-   * [QQ Simple]()
+   * [QQ Simple](https://wujiaq.github.io/QQ/index.html)
    * [plane war]()
    * [Picture amplifier]()
    * [Shuffling figure]()

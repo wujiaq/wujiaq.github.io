@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+	<audio id="audio" src="./audio/83766.mp3"></audio>
+
+	<div class="chat">
+
+		<!-- 注册 -->
+		<div id="register-box" class="register-box box">
+			<div class="logo">
+				<img class="auto-img" src="./images/logo.jpg" alt="">
+			</div>
+			<div class="group">
+				<input id="reguser" class="user-ipt" type="text" placeholder="用户名" />
+			</div>
+			<div class="group">
+				<input id="regpwd" class="user-ipt" type="password" placeholder="密码" />
+			</div>
+			<div class="group">
+				<input id="regnickname" class="user-ipt" type="text" placeholder="匿名" />
+			</div>
+			<div id="register" class="register">注册</div>
+			<div><span id="gologin" class="login-text">登录</span></div>
+		</div>
+
+		<!-- 登录 -->
+		<div id="login-box" class="login-box box">
+			<div class="logo">
+				<img class="auto-img" src="./images/logo.jpg" alt="">
+			</div>
+			<div class="group">
+				<input id="loguser" class="user-ipt" type="text" placeholder="用户名" />
+			</div>
+			<div class="group">
+				<input id="logpwd" class="user-ipt" type="password" placeholder="密码" />
+			</div>
+			<div id="login" class="register">登录</div>
+			<div><span id="goregister" class="login-text">注册</span></div>
+		</div>
+
+		<!-- 聊天面板 -->
+		<div id="chat-box" class="chat-box">
+			<div class="nav">
+				<span class="title">企鹅大侠</span>
+				<div class="fl nav-left clearfix">
+					<div class="fl search">
+						<span class="fl search-icon"></span>
+						<input class="fl search-ipt" type="text">
+					</div>
+					<div id="add" class="fl add">
+						<span class="add-icon"></span>
+					</div>
+				</div>
+				<div class="fl nav-right">
+					<span class="fr close"></span>
+				</div>
+			</div>
+			<div class="chat-bottom">
+				<div class="chat-left fl">
+					<ul id="innerbox" class="friend-list innerbox">
+						
+					</ul>
+				</div>
+				<div id="chat-right" class="chat-right fl">
+					<div id="chat-content" class="chat-content innerbox">
+						<!-- 聊天气泡 -->
+					</div>
+					<div class="chating">
+						<ul class="icons">
+							<li id="faces-icons">
+								<img class="auto-img" src="./images/smile.png" alt="">
+								<ul id="ul-faces" class="faces">
+								</ul>
+							</li>
+						</ul>
+						<div id="input-content" class="input-content" contenteditable="true"></div>
+						<div class="fr clearfix">
+							<span class="fl btn close-btn">关闭</span>
+							<span id="send" class="fl btn send-btn">发送</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 添加好友框 -->
+		<div id="add-friend" class="box add-friend">
+			<div class="group">
+				<input id="userid" class="user-ipt" type="text" placeholder="用户名" />
+			</div>
+			<div id="cancel" class="register f-btn c-btn fl">取消</div>
+			<div id="commit" class="register f-btn co-btn fl">确认</div>
+		</div>
+
+		<!-- 好友申请 -->
+		<div id="friend-apply" class="box friend-apply">
+			<h3>好友申请</h3>
+			<div>用户 <span id="uname">121</span> 加你为好友</div>
+			<div>添加申请信息: <span id="uinfo"></span></div>
+			<div id="cancel" class="register f-btn c-btn fl">拒绝</div>
+			<div id="agree" class="register f-btn co-btn fl">同意</div>
+		</div>
+
+	</div>
+	<script>
+		
+	var title = document.getElementsByClassName('title')[0];
+	console.log(title.textContent);
+	
+	</script>
+
+		<!-- webim配置文件 -->
+		<script src="./sdk/webim.config.js"></script>
+	
+		<!-- 连接XMPP服务器 -->
+		<script src="./sdk/strophe-1.2.8.min.js"></script>
+	
+		<!-- 实时聊天主文件 -->
+		<script src="./sdk/websdk-1.4.12.js"></script>
+
+		<script src="./js/index.js"></script>
+</body>
+
+</html>
