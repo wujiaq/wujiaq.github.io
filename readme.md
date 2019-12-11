@@ -5,17 +5,12 @@
    
 2.js
    * [QQ Simple](https://wujiaq.github.io/QQ/index.html)
-   * [plane war]()
-   * [Picture amplifier]()
-   * [Shuffling figure]()
+   * [plane war](https://wujiaq.github.io/plane/index.html)
+   * [Picture amplifier](https://wujiaq.github.io/pictureExpand/index.html)
 
 3.Bootstrap
-   * [model]()
+   * [model](https://wujiaq.github.io/model/index.html)
 
-4.Html5 
-   * [Ball game]()
-
-5.CSS3 + Es6
-   * [Rotate the box]()
-   * [visual difference]()
-   * [music player]()
+4.Animation(css3+html5+canvas)
+   * [animation](https://wujiaq.github.io/animation/animation.html)
+   * [ballGame](https://wujiaq.github.io/ballGame/index.html)

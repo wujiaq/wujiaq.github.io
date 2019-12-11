@@ -1,0 +1,390 @@
+body {
+    background: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    perspective: 1000px;
+}
+
+
+.box-top {
+    height: 200px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+
+    svg {
+        width: 15%;
+        float: left;
+    }
+
+    .wave {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 5%;
+        right: 25%;
+        background: rgb(141, 205, 207);
+        border-radius: 50%;
+
+        .w2 {
+            animation-delay: 1s;
+        }
+
+        .w3 {
+            animation-delay: 2s;
+        }
+
+        .w4 {
+            animation-delay: 3s;
+        }
+    }
+
+    .wave * {
+        border: 1px solid white;
+        position: absolute;
+        border-radius: 50%;
+        animation: opac 4s infinite;
+    }
+
+
+
+}
+
+.box-middle {
+    margin: 15px 0;
+    overflow: hidden;
+
+    .bigbox {
+        float: left;
+        position: relative;
+        margin-top: 100px;
+        margin-left: 30px;
+        width: 350px;
+        color: white;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 250%;
+        // background: linear-gradient(180deg, #222 0, #444 100%);
+        box-shadow: inset 0 5px 20px black;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+
+        span {
+            float: left;
+            height: 100px;
+            line-height: 120px;
+            width: 50px;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+
+        .cover {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+            span {
+                background: linear-gradient(white 0, #0FD9E0 100%);
+                animation: mytranslate 2s infinite;
+            }
+
+            .sp-2 {
+                animation-delay: 0.14s;
+            }
+
+            .sp-3 {
+                animation-delay: 0.28s;
+            }
+
+            .sp-4 {
+                animation-delay: 0.42s;
+            }
+
+            .sp-5 {
+                animation-delay: 0.56s;
+            }
+
+            .sp-6 {
+                animation-delay: 0.70s;
+            }
+
+            .sp-7 {
+                animation-delay: 0.84s;
+            }
+        }
+    }
+
+    .box {
+        float: left;
+        position: relative;
+        width: 350px;
+        height: 350px;
+        // background: lime;
+        margin-left: 20px;
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            transform-style: preserve-3d;
+            animation: myrotate 5s infinite;
+
+            .side {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .side-top {
+                background: url(./images/bg1.jpg) no-repeat;
+                transform: rotateX(90deg) translateZ(100px);
+            }
+
+            .side-bottom {
+                background: url(./images/bg2.jpg) no-repeat;
+                transform: rotateX(90deg) translateZ(-100px);
+            }
+
+            .side-left {
+                background: url(./images/bg3.jpg) no-repeat;
+                transform: rotateY(90deg) translateZ(-100px);
+            }
+
+            .side-right {
+                background: url(./images/bg4.jpg) no-repeat;
+                transform: rotateY(90deg) translateZ(100px);
+            }
+
+            .side-front {
+                background: url(./images/bg5.jpg) no-repeat;
+                transform: translateZ(100px);
+            }
+
+            .side-back {
+                background: url(./images/bg6.jpg) no-repeat;
+                transform: rotateY(180deg) translateZ(100px);
+            }
+        }
+
+    }
+
+    .loading {
+        float: left;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        .card {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left:-100px;
+            margin-top: -100px;
+            .top {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                animation: myrotate1 10s linear 0s infinite;
+
+                .hole {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: white;
+                    border-radius: 50%;
+                    transform: scale(0.5);
+                }
+
+                .piece {
+                    width: 100%;
+                    height: 100%;
+                    background: lightpink;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 10%;
+                }
+
+                .p1 {
+                    transform: rotateZ(0deg);
+                }
+
+                .p2 {
+                    transform: rotateZ(30deg);
+                }
+
+                .p3 {
+                    transform: rotateZ(60deg);
+                }
+            }
+
+            .left {
+                width: 60px;
+                height: 60px;
+                position: relative;
+                top: 10px;
+                /* background: lightpink; */
+                animation: myrotate1 10s linear 0s infinite reverse;
+
+                .hole {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: white;
+                    border-radius: 50%;
+                    transform: scale(0.5);
+                }
+
+                .piece {
+                    width: 100%;
+                    height: 100%;
+                    background: lightskyblue;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 10%;
+                }
+
+                .p1 {
+                    transform: rotateZ(0deg);
+                }
+
+                .p2 {
+                    transform: rotateZ(30deg);
+                }
+
+                .p3 {
+                    transform: rotateZ(60deg);
+                }
+            }
+
+            .right {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                top: -65px;
+                left: 70px;
+                /* background: lightpink; */
+                animation: myrotate1 10s linear 0s infinite;
+
+                .hole {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: white;
+                    border-radius: 50%;
+                    transform: scale(0.5);
+                }
+
+                .piece {
+                    width: 100%;
+                    height: 100%;
+                    background: lightgreen;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 10%;
+                }
+
+                .p1 {
+                    transform: rotateZ(0deg);
+                }
+
+                .p2 {
+                    transform: rotateZ(30deg);
+                }
+
+                .p3 {
+                    transform: rotateZ(60deg);
+                }
+            }
+
+            // .mask {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     /* background: lightgreen; */
+            //     box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.4), 0 0 10px 0 rgba(0, 0, 0, 0.15) inset;
+            //     transform: scale(0.5);
+            //     border-radius: 50%;
+
+            // }
+
+        }
+
+
+    }
+
+
+}
+
+@keyframes mytranslate {
+    0% {
+        margin-bottom: 0;
+    }
+
+    16% {
+        margin-bottom: 100%;
+        height: 20px;
+    }
+
+    50% {
+        margin-bottom: 0;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+@keyframes opac {
+    from {
+        opacity: 1;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes myrotate {
+    from {
+        transform: rotate3d(1, -1, 0, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, -1, 0, 360deg);
+    }
+}
+
+@keyframes myrotate1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
