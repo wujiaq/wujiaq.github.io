@@ -1,10 +1,12 @@
 基本项目:
 
-1.HTML + CSS +JS
+1.HTML + CSS
    * [旅游项目](https://wujiaq.github.io/Tourist/index.html)
+   
+2.js
 
-2.Bootstrap
+3.Bootstrap
 
-3.Html5 
+4.Html5 
 
-4.CSS3 + Es6
+5.CSS3 + Es6
