@@ -17,6 +17,22 @@ body {
   height: 100%;
   background: url(../images/background-start.png) no-repeat;
   background-size: 100% 100%;
+  position: relative;
+}
+#content #start .author {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+#content #start .author span {
+  font-family: STSong;
+}
+#content #start .name {
+  position: absolute;
+  top: 20%;
+}
+#content #start .name span {
+  font-size: 24px;
 }
 #content #start button {
   width: 150px;
@@ -99,4 +115,3 @@ body {
   position: relative;
   bottom: 0;
 }
-/*# sourceMappingURL=./main.css.map */

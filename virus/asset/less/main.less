@@ -32,29 +32,49 @@ body {
     margin: 0 auto;
     background: lightblue;
     position: relative;
-    
+
     #start {
-//      display: none;
+        //      display: none;
         .stage-layout;
         background: url(../images/background-start.png) no-repeat;
         background-size: 100% 100%;
+        position: relative;
+        .author {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            span{
+                font-family: STSong;
+            }
+        }
+        .name{
+            position: absolute;
+            top: 20%;
+
+            span{
+                font-size: 24px;
+            }
+        }
         button {
             .button-style;
         }
     }
+
     #main {
         display: none;
         .stage-layout;
         background: url(../images/background-game.png) repeat-y;
         background-size: 100% auto;
+
         #score {
             position: absolute;
             top: 10px;
             left: 10px;
         }
+
         #suspend {
             display: none;
-            
+
             button {
                 .button-style;
                 bottom: auto;
@@ -62,15 +82,17 @@ body {
                 bottom: 50%;
                 z-index: 99999;
             }
+
             button:first-child {
                 margin-top: -40px;
             }
         }
+
         img {
             position: absolute;
         }
     }
-    
+
     #settlement {
         display: none;
         .stage-layout;
@@ -78,6 +100,7 @@ body {
         text-align: center;
         padding-top: 50%;
         box-sizing: border-box;
+
         button {
             .button-style;
             position: relative;
