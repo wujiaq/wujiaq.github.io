@@ -56,7 +56,7 @@ var ourPlaneX = {
 var bulletX = {
     width: 6,
     height: 14,
-    imgSrc: './asset/images/our-bullet.png',
+    imgSrc: './asset/images/needle.png',
     speed: 5
 };
 
