@@ -15,7 +15,7 @@
    * [Picture amplifier](https://wujiaq.github.io/pictureExpand/index.html)
       >![alt](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1199903622,910475298&fm=26&gp=0.jpg)
 
-   * [virus wars](https://wujiaq.github.io/virus-wars/index.html)
+   * [virus wars](https://wujiaq.github.io/virus/index.html)
 
 *3.Bootstrap项目*
    * [model](https://wujiaq.github.io/model/index.html)
