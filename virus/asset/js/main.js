@@ -14,7 +14,7 @@ var stageSizeX = parseInt(contentClass.width);
 var stageSizeY = parseInt(contentClass.height);
 
 // 创建不同病毒型号对象
-var enemyPlaneS = {
+var enemyVirusS = {
     width: 34,
     height: 24,
     imgSrc: './asset/images/virus.png',
@@ -23,7 +23,7 @@ var enemyPlaneS = {
     hp: 1
 };
 
-var enemyPlaneM = {
+var enemyVirusM = {
     width: 46,
     height: 60,
     imgSrc: './asset/images/virueM.png',
@@ -33,7 +33,7 @@ var enemyPlaneM = {
     hp: 3
 };
 
-var enemyPlaneL = {
+var enemyVirusL = {
     width: 110,
     height: 164,
     imgSrc: './asset/images/virusL.png',
@@ -44,7 +44,7 @@ var enemyPlaneL = {
 };
 
 // 我方医生
-var ourPlaneX = {
+var ourDoctor = {
     width: 100,
     height: 100,
     imgSrc: './asset/images/doctor.jpg',
@@ -60,7 +60,7 @@ var bulletX = {
     speed: 5
 };
 
-// 创建病毒的构造函数
+// 创建构造函数
 var Plane = function (centerX, centerY, planeModel, speed) {
 	this.centerX = centerX;
     this.centerY = centerY;
@@ -77,7 +77,7 @@ var Plane = function (centerX, centerY, planeModel, speed) {
     this.currentY = this.centerY -this.sizeY/2;
 }
 
-// 画出一个病毒的方法
+// 画的方法
 Plane.prototype.draw = function () {
 	// this.imgNode = document.createElement('img');
 	this.imgNode = new Image();
@@ -87,7 +87,7 @@ Plane.prototype.draw = function () {
 	mainDiv.appendChild(this.imgNode);
 }
 
-// 某个病毒的移动方法
+// 移动方法
 Plane.prototype.move = function () {
 	this.currentY += this.speed;
 	this.centerY = this.currentY + this.sizeY/2;
@@ -95,7 +95,7 @@ Plane.prototype.move = function () {
 	this.checkOverRange();
 }
 
-// 检测病毒超出画布
+// 检测是否超出画布
 Plane.prototype.checkOverRange = function () {
 	// 如果病毒超出画布 就给当前病毒对象添加一个isBottomRange的属性
 	this.isBottomRange = this.currentY > (stageSizeY - this.sizeY);
@@ -119,11 +119,11 @@ Enemy.prototype.createNewEnemy = function () {
 	this.generatedCount ++;
 	
 	if (this.generatedCount%17 === 0) {
-		this.newEnemy = new Plane(randomNumber(enemyPlaneL.width/2, stageSizeX-enemyPlaneL.width/2), 12, enemyPlaneL, 1)
+		this.newEnemy = new Plane(randomNumber(enemyVirusL.width/2, stageSizeX-enemyVirusL.width/2), 12, enemyVirusL, 1)
 	} else if (this.generatedCount%5 === 0) {
-		this.newEnemy = new Plane(randomNumber(enemyPlaneM.width/2, stageSizeX-enemyPlaneM.width/2), 12, enemyPlaneM, randomNumber(2,3))
+		this.newEnemy = new Plane(randomNumber(enemyVirusM.width/2, stageSizeX-enemyVirusM.width/2), 12, enemyVirusM, randomNumber(2,3))
 	} else {
-		this.newEnemy = new Plane(randomNumber(enemyPlaneS.width/2, stageSizeX-enemyPlaneS.width/2), 12, enemyPlaneS, randomNumber(3,5))
+		this.newEnemy = new Plane(randomNumber(enemyVirusS.width/2, stageSizeX-enemyVirusS.width/2), 12, enemyVirusS, randomNumber(3,5))
 	}
 	
 	// 把新生成的病毒写入数组
@@ -206,13 +206,13 @@ var enemies = new Enemy();
 
 
 
-//var planeS = new Plane(17, 12, enemyPlaneS, 10);
+//var planeS = new Plane(17, 12, enemyVirusS, 10);
 //planeS.draw();
 //
-//var planeM = new Plane(297, 10, enemyPlaneM, 5);
+//var planeM = new Plane(297, 10, enemyVirusM, 5);
 ////planeM.draw();
 
-var ourPlane = new Plane(stageSizeX/2, stageSizeY-ourPlaneX.height/2, ourPlaneX, 0);
+var ourPlane = new Plane(stageSizeX/2, stageSizeY-ourDoctor.height/2, ourDoctor, 0);
 ourPlane.draw();
 function moveOurPlane(ev) {
 	// console.log(ev);
