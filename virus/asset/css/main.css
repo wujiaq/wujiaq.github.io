@@ -101,7 +101,7 @@ body {
   height: 100%;
   z-index: 999;
   text-align: center;
-  padding-top: 50%;
+  padding-top: 20%;
   box-sizing: border-box;
 }
 #content #settlement button {
@@ -118,5 +118,13 @@ body {
   right: 0;
   position: relative;
   bottom: 0;
+}
+.boxsize{
+  display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+td{
+  border: 1px solid black;
 }
 /*# sourceMappingURL=./main.css.map */
